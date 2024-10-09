@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Analyzer</title>
+    <style>
+        #container{
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        #textInp{
+            width: 70%;
+            height: 80px;
+            margin: auto;
+        }
+        #textInp_box{
+            display: flex;
+            justify-content: center;
+        }
+        #analyzer_btn{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        #result_box{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div id="container">
-        
+        <h1>Text Analyzer</h1>
+        <div id="textInp_box">
+            <textarea name="userInput" id="textInp" placeholder="Enter text here..."></textarea>
+        </div>
+        <div id="analyzer_btn">
+            <button id="countBtn">Count Words</button>
+            <button id="toLowerBtn">To Lowercase</button>
+            <button id="toUpperBtn">To Uppercase</button>
+            <button id="substringBtn">Check Substring</button>
+        </div>
+        <div id="result_box">
+
+        </div>
     </div>
 </body>
+<script src="index.js"></script>
 </html>
